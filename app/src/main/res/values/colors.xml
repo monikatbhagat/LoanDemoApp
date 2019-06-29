@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#252222</color>
+    <color name="colorPrimaryDark">#252222</color>
+    <color name="black">#000000</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="orange">#E67E22</color>
+    <color name="white">#FFFEFE</color>
+    <color name="offwhite">#F8F9F9</color>
+    <color name="blue">#000FFF</color>
+
+    <color name="discrete_seekbar_colorGray">#E2E2E2</color>
+    <color name="discrete_seekbar_colorBlack">#000000</color>
+    <color name="discrete_seekbar_colorRed100">#FFCDD2</color>
+
+    <color name="colorPink200">#F48FB1</color>
+    <color name="colorPurple500">#9C27B0</color>
+    <color name="colorIndigo800">#283593</color>
+    <color name="colorLime400">#D4E157</color>
+    <color name="colorLimeA400">#C6FF00</color>
+    <color name="colorBlueGrey200">#B0BEC5</color>
+    <color name="colorBlueGrey900">#263238</color>
+</resources>

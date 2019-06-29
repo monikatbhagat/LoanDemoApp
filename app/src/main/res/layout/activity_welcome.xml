@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@color/offwhite">
+
+
+    <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textColor="@color/orange"
+            android:textSize="25dp"
+            android:visibility="visible"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/imageView4"
+            android:layout_marginStart="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintBottom_toTopOf="@+id/tvName"
+            app:layout_constraintVertical_chainStyle="packed" android:layout_marginBottom="8dp"
+            app:layout_constraintVertical_bias="0.26"/>
+    <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"
+            android:textSize="25dp"
+            android:text="" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/imageView4"
+            android:layout_marginStart="8dp" app:layout_constraintTop_toBottomOf="@+id/textView5"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintBottom_toTopOf="@+id/textView10"/>
+    <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:textColor="@color/orange"
+            android:textSize="18dp"
+            android:id="@+id/textView10"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toTopOf="@+id/textView11"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <!--<ImageView-->
+    <!--android:layout_width="150dp"-->
+    <!--android:layout_height="150dp"-->
+    <!--app:srcCompat="@drawable/cancel"-->
+    <!--android:visibility="gone"-->
+    <!--android:id="@+id/ivCancle" app:layout_constraintStart_toStartOf="parent"-->
+    <!--android:layout_marginStart="8dp" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>-->
+    <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:visibility="visible"
+            android:id="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="18dp"
+            android:id="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            app:layout_constraintBottom_toTopOf="@+id/textView12" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="@string/selectmonths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:textColor="@color/orange"
+            android:textSize="18dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            app:layout_constraintBottom_toTopOf="@+id/slider_3" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"/>
+
+    <com.example.loandemoapp.util.DiscreteSeekBar
+        android:id="@+id/slider_3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:discrete_seekbar_maxValue="200"
+        app:discrete_seekbar_minValue="-200"
+        app:discrete_seekbar_sectionCount="4"
+        app:discrete_seekbar_thumbColor="@color/colorIndigo800"
+        app:discrete_seekbar_thumbDefaultSize="16dp"
+        app:discrete_seekbar_thumbPressedSize="24dp"
+        app:discrete_seekbar_tickMarkDrawable="@drawable/tickmark"
+        app:discrete_seekbar_trackColor="@color/colorBlueGrey900"
+        app:discrete_seekbar_trackTouchEnable="true"
+        app:discrete_seekbar_trackWidth="1dp"
+        app:discrete_seekbar_value="0"
+        app:layout_constraintBottom_toTopOf="@+id/btnProceed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/btnProceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:text="Proceed"
+        android:textAllCaps="false"
+        android:background="@color/orange"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

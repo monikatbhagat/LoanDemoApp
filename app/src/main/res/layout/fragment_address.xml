@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+
+    <TextView
+            android:id="@+id/tvYearResidence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:paddingLeft="15dp"
+            android:text="@string/yearofresidence"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintBottom_toTopOf="@+id/edYearResidence"
+            app:layout_constraintVertical_chainStyle="packed" app:layout_constraintVertical_bias="0.060000002"
+            android:layout_marginBottom="8dp"/>
+
+    <ImageView
+            android:id="@+id/ivYearResidence"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/user"
+            app:layout_constraintBottom_toBottomOf="@+id/edYearResidence"
+            app:layout_constraintEnd_toStartOf="@+id/edYearResidence"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/edYearResidence"
+            app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    <Spinner
+            android:id="@+id/edYearResidence"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:drawableEnd="@drawable/dd"
+            android:drawableRight="@drawable/dd"
+            android:hint="Years in Current Address"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ivYearResidence"
+            app:layout_constraintTop_toBottomOf="@+id/tvYearResidence"
+            app:layout_constraintBottom_toTopOf="@+id/tvYearCity" android:layout_marginBottom="24dp"/>
+
+    <TextView
+            android:id="@+id/tvYearCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:paddingLeft="15dp"
+            android:text="@string/yearofcity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edYearResidence"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintBottom_toTopOf="@+id/edYearCity"
+            android:layout_marginBottom="8dp"/>
+
+    <ImageView
+            android:id="@+id/ivYearCity"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/user"
+            app:layout_constraintBottom_toBottomOf="@+id/edYearCity"
+            app:layout_constraintEnd_toStartOf="@+id/edYearCity"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/edYearCity"/>
+
+    <Spinner
+            android:id="@+id/edYearCity"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:drawableEnd="@drawable/dd"
+            android:drawableRight="@drawable/dd"
+            android:hint="Years in Current City"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ivYearCity"
+            app:layout_constraintTop_toBottomOf="@+id/tvYearCity"
+            app:layout_constraintBottom_toTopOf="@+id/tvYearJob" android:layout_marginBottom="24dp"/>
+
+
+    <TextView
+            android:id="@+id/tvYearJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:paddingLeft="15dp"
+            android:text="@string/yearofjob"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edYearCity"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintBottom_toTopOf="@+id/edYearJob"
+            android:layout_marginBottom="8dp"/>
+
+    <ImageView
+            android:id="@+id/ivYearJob"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/user"
+            app:layout_constraintBottom_toBottomOf="@+id/edYearJob"
+            app:layout_constraintEnd_toStartOf="@+id/edYearJob"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/edYearJob"/>
+
+    <Spinner
+            android:id="@+id/edYearJob"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:drawableEnd="@drawable/dd"
+            android:drawableRight="@drawable/dd"
+            android:hint="Current Job Duration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ivYearJob"
+            app:layout_constraintTop_toBottomOf="@+id/tvYearJob"
+            app:layout_constraintBottom_toTopOf="@+id/tvExp" android:layout_marginBottom="24dp"/>
+
+
+    <TextView
+            android:id="@+id/tvExp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:paddingLeft="15dp"
+            android:text="@string/workexp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edYearJob"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintBottom_toTopOf="@+id/edExp"
+            android:layout_marginBottom="8dp"/>
+
+    <ImageView
+            android:id="@+id/ivExp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/user"
+            app:layout_constraintBottom_toBottomOf="@+id/edExp"
+            app:layout_constraintEnd_toStartOf="@+id/edExp"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/edExp" app:layout_constraintHorizontal_chainStyle="spread"/>
+
+    <Spinner
+            android:id="@+id/edExp"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:drawableEnd="@drawable/dd"
+            android:drawableRight="@drawable/dd"
+            android:hint="Total Work Experience"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ivExp"
+            app:layout_constraintTop_toBottomOf="@+id/tvExp"
+            app:layout_constraintBottom_toTopOf="@+id/button"/>
+
+    <Button
+            android:id="@+id/button"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/orange"
+            android:drawableEnd="@drawable/right"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">LoanDemoApp</string>
+    <string name="full_name">First Name</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="entercode">Enter Code</string>
+    <string name="last_name">Last Name</string>
+    <string name="dob">Date of Birth</string>
+    <string name="tell_your_name">Tell us your full name as per PAN/Aadhar Card.\nPlease do not add
+                                   salutations like Mr.,Mrs.,Dr. etc.</string>
+
+    <string name="birthdate">What is your birthdate as per PAN card?</string>
+    <string name="gender">Select Gender</string>
+    <string name="city">Which city do you live in?</string>
+    <string name="cityscroll">Scroll to select current city?</string>
+    <string name="please">Please take a selfie</string>
+    <string name="itwill">It will be used in the application form</string>
+    <string name="quick">Quick Profile</string>
+    <string name="promocode">Enter your promo/referral code below.</string>
+    <string name="doyou">Do you have a promo/referral code?</string>
+    <string name="pleasetype">Please type your take home salary/income</string>
+    <string name="howdoyou">How do you receive salary/income?</string>
+    <string name="whichbank">Which bank account do you use?(select 1 or more)</string>
+    <string name="whatis">What is your PAN Card number?</string>
+    <string name="type">What is your company type?</string>
+    <string name="companyname">What is your company name?</string>
+    <string name="designation">What is your designation?</string>
+    <string name="officemail">What is your office email ID?</string>
+    <string name="residence">What is your residence type?</string>
+    <string name="yearofresidence">Years in your current residence?</string>
+    <string name="yearofcity">Years in your current city?</string>
+    <string name="yearofjob">Years in your current job?</string>
+    <string name="workexp">Total work experience till date? </string>
+    <string name="currentresidence">Please enter your complete and correct residence address</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="selectmonths">Select no. of months for which want EMI</string>
+
+
+</resources>

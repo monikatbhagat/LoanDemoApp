@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" android:id="@+id/scrollView3">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/tvPan"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:inputType="textMultiLine"
+                android:paddingLeft="17dp"
+                android:text="@string/whatis"
+                app:layout_constraintBottom_toTopOf="@+id/etPan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"/>?
+
+        <ImageView
+                android:id="@+id/ivUser2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/user"
+                app:layout_constraintBottom_toBottomOf="@+id/etPan"
+                app:layout_constraintEnd_toStartOf="@+id/etPan"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/etPan"/>
+
+        <EditText
+                android:id="@+id/etPan"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="PAN Card Number"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/tvBeforeName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ivUser2"
+                app:layout_constraintTop_toBottomOf="@+id/tvPan" android:layout_marginBottom="24dp"/>
+
+        <TextView
+                android:id="@+id/tvBeforeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:inputType="textMultiLine"
+                android:paddingLeft="15dp"
+                android:text="@string/companyname"
+                app:layout_constraintBottom_toTopOf="@+id/editText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etPan" android:layout_marginBottom="8dp"/>
+
+        <ImageView
+                android:id="@+id/ivCompany"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/user"
+                app:layout_constraintBottom_toBottomOf="@+id/editText"
+                app:layout_constraintEnd_toStartOf="@+id/editText"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/editText"/>
+
+        <EditText
+                android:id="@+id/editText"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Company Name"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/tvCompanyType"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ivCompany"
+                app:layout_constraintTop_toBottomOf="@+id/tvBeforeName" android:layout_marginBottom="24dp"/>
+
+
+        <TextView
+                android:id="@+id/tvCompanyType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:inputType="textMultiLine"
+                android:paddingLeft="15dp"
+                android:text="@string/type"
+                app:layout_constraintBottom_toTopOf="@+id/edSelect"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText" android:layout_marginBottom="8dp"/>
+
+        <ImageView
+                android:id="@+id/ivCompanyType"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/user"
+                app:layout_constraintBottom_toBottomOf="@+id/edSelect"
+                app:layout_constraintEnd_toStartOf="@+id/edSelect"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/edSelect"/>
+
+        <Spinner
+                android:id="@+id/edSelect"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:autofillHints="@string/gender"
+                android:dropDownWidth="300dp"
+                app:layout_constraintBottom_toTopOf="@+id/tvDesignation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ivCompanyType"
+                app:layout_constraintTop_toBottomOf="@+id/tvCompanyType" android:layout_marginBottom="24dp"/>
+
+
+        <TextView
+                android:id="@+id/tvDesignation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:inputType="textMultiLine"
+                android:paddingLeft="15dp"
+                android:text="@string/designation"
+                app:layout_constraintBottom_toTopOf="@+id/edDesignation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edSelect" android:layout_marginBottom="8dp"/>
+
+        <ImageView
+                android:id="@+id/ivDesignation"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/user"
+                app:layout_constraintBottom_toBottomOf="@+id/edDesignation"
+                app:layout_constraintEnd_toStartOf="@+id/edDesignation"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/edDesignation"/>
+
+        <EditText
+                android:id="@+id/edDesignation"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Designation"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/tvMail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ivDesignation"
+                app:layout_constraintTop_toBottomOf="@+id/tvDesignation" android:layout_marginBottom="24dp"/>
+
+
+        <TextView
+                android:id="@+id/tvMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:inputType="textMultiLine"
+                android:paddingLeft="15dp"
+                android:text="@string/officemail"
+                app:layout_constraintBottom_toTopOf="@+id/edMail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edDesignation" android:layout_marginBottom="8dp"/>
+
+        <ImageView
+                android:id="@+id/ivMail"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/user"
+                app:layout_constraintBottom_toBottomOf="@+id/edMail"
+                app:layout_constraintEnd_toStartOf="@+id/edMail"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/edMail"/>
+
+        <EditText
+                android:id="@+id/edMail"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Work E-Mail"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/tvResidence"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ivMail"
+                app:layout_constraintTop_toBottomOf="@+id/tvMail" android:layout_marginBottom="24dp"/>
+
+
+        <TextView
+                android:id="@+id/tvResidence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:inputType="textMultiLine"
+                android:paddingLeft="15dp"
+                android:text="@string/residence"
+                app:layout_constraintBottom_toTopOf="@+id/edResidence"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edMail" android:layout_marginBottom="8dp"/>
+
+        <ImageView
+                android:id="@+id/ivResidence"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/user"
+                app:layout_constraintBottom_toBottomOf="@+id/edResidence"
+                app:layout_constraintEnd_toStartOf="@+id/edResidence"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/edResidence"/>
+
+        <Spinner
+                android:id="@+id/edResidence"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Scroll to select"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ivResidence"
+                app:layout_constraintTop_toBottomOf="@+id/tvResidence" android:layout_marginBottom="32dp"/>
+
+
+        <Button
+                android:id="@+id/button"
+                android:layout_width="320dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/orange"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/scrollView3"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
+
+
+
+
